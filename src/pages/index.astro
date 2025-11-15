@@ -1,11 +1,50 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <section class="flex flex-col min-h-screen items-center justify-center px-4">
+    <header class="flex gap-3 items-center">
+      <svg
+        class="h-12 fill-slate-800"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1000 1000"
+        ><path d="M860.92,10.22V227.57H763.07V135.34h-555v92.23H110.23V10.22Z"
+        ></path><circle
+          class="transition-transform duration-50 origin-[0%_35%]"
+          cx="625"
+          cy="343"
+          r="80"></circle><circle cx="338" cy="343" r="80"></circle><path
+          d="M485.57,623.76c-11.23,36.89-34.49,53.74-89.82,53.74H267.42c-37.69,0-59.35,19.24-59.35,58.54v14.44H110.23V704c0-100.25,51.33-151.58,143.56-151.58H399c25.67,0,37.7-13.63,37.7-35.29V490.63h97.84v26.46c0,21.66,12,35.29,37.7,35.29H717.35c92.24,0,143.57,51.33,143.57,151.58v46.52H763.07V736c0-39.3-21.66-58.54-59.35-58.54H575.4C520.06,677.5,496.8,660.65,485.57,623.76Z"
+        ></path><path
+          d="M110.23,774.53h97.84V866h555V774.53h97.85V991.08H110.23Z"
+        ></path><path
+          d="M268.62,710.25c70.18,40.23,140.36,57.08,219,57.08s148.78-16.85,219-57.08V780c-55.68,38.36-132.87,58.95-219,58.95S325.23,818.32,268.62,780Z"
+        ></path></svg
+      >
+      <h1 class="font-bold text-5xl mt-3">Cam Parry</h1>
+    </header>
+    <div class="w-80 max-w-full mt-8 space-y-4">
+      <a
+        href="https://camparry.com"
+        class="block w-full border-2 border-[#155E75] bg-[#E7E5E4] font-semibold p-3 text-center hover:bg-[#D7D3D1]"
+        >Website</a
+      >
+      <a
+        href="https://www.linkedin.com/in/cam-parry/"
+        class="block w-full border-2 border-[#155E75] bg-[#E7E5E4] font-semibold p-3 text-center hover:bg-[#D7D3D1]"
+        >LinkedIn</a
+      >
+      <a
+        href="tel:+34611613617"
+        class="block w-full border-2 border-[#155E75] bg-[#E7E5E4] font-semibold p-3 text-center hover:bg-[#D7D3D1]"
+        >Phone</a
+      >
+      <a
+        href="mailto:hello@camparry.com"
+        class="block w-full border-2 border-[#155E75] bg-[#E7E5E4] font-semibold p-3 text-center hover:bg-[#D7D3D1]"
+        >Email</a
+      >
+    </div>
+  </section>
 </Layout>
